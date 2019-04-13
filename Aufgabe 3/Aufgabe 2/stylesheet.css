@@ -1,0 +1,61 @@
+/*stylesheet.css*/
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3em;
+}
+
+nav {
+    word-spacing: 2em;
+}
+li {
+    display: inline;
+    list-style-type: none;
+}
+body { 
+    background-color: #ffffff;
+}
+article {
+    background-color: #f1f1f1;
+    width: 90%;
+    padding: 0.01em 16px;
+    margin: 20px 50px;
+}
+section {
+    background-color: #ffffff;
+    width: 85%;
+    padding: 1em 2em;
+    margin-top: 20px;
+    margin-left: 3em;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12) 
+}
+p#footer {
+    color: black;
+}
+h2,h4 {
+font-family: 'Courier New', Courier, monospace
+}
+h2 {
+    margin-left: 3em;
+    padding: 10px;
+    border-left-color: brown;
+    border-left-style: solid;
+    border-left-width: 4px
+ 
+}
+img {
+    height: 25em;
+    width: 100;
+    border-radius: 6px;
+    border: 3em
+}
+footer {
+    width: 100%;
+    background-color: #cce6ff;
+
+}
+p {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 12pt;
+    color: #1a1a1a
+}
