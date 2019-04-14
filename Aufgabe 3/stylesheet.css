@@ -14,7 +14,8 @@ ul {
     text-align: center
 }
 li {
-    display: inline
+    display: inline;
+    align-self: center
 }
 body { 
     background-color: #ffffff;
