@@ -12,6 +12,9 @@ header img {
     position: absolute;
     margin-left: -12em
 }
+li a :hover{
+    color: brown
+}
 nav {
     word-spacing: 2em;
     margin-bottom: 5em
