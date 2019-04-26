@@ -1,0 +1,28 @@
+/*stylesheet news.css*/
+
+/* HEADER */
+header {
+    width: 100%;
+    text-align: center
+}
+
+header img {
+    float: left;
+    display: inline-block;
+    position: absolute;
+    margin-left: -12em
+}
+nav {
+    word-spacing: 2em;
+    margin-bottom: 5em
+}
+
+ul {
+    list-style-type: none
+}
+
+li {
+    display: inline
+}
+
+/* MAIN */
