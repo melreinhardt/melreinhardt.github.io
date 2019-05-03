@@ -43,8 +43,7 @@ li {
 
 li:hover {
     background-color: lightcoral;
-    background-blend-mode: hue;
-    size: 8pt;
+    size: 20pt;
     padding: 0.5em
 
 }
