@@ -80,11 +80,10 @@ aside p {
     text-overflow: ellipsis;
 }
 
-aside:hover {
+aside:hover p{
     position: relative;
-    width: 20%;
-    background-color: white;
     overflow: visible;
+    white-space: normal;
    
 
 }
