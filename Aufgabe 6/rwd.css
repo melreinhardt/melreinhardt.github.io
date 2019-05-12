@@ -76,13 +76,12 @@ ul {
 
 #wegweiser:hover+ul{
     display: block;
-    transition: all ease 2.5s;
 
 }
 
 
 ul:hover {
-    display: block
+    display: block;
 }
 
 
