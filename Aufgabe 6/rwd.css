@@ -67,16 +67,17 @@ ul {
     display        : none;
     left           : -30px;
     text-decoration: none;
-    list-style     : none;
+    list-style-type: none;
     top            : 33px;
     width          : 100px;
     font-size      : 20px;
-    text-align: left
+    text-align: left;
 }
 
 #wegweiser:hover+ul{
     display: block;
     transition: all ease 2.5s;
+
 }
 
 
@@ -195,7 +196,7 @@ footer {
         font-family: 'raleway';
         border-left-color: #fbdadd;
         padding-left: 5pt;
-    }
+    } 
   }
 /*---------------------------------------------------------------*/
 /* Tablet */
