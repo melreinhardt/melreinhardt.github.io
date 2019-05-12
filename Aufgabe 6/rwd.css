@@ -1,4 +1,4 @@
-/*stylesheet test.css*/
+/*stylesheet*/
 
 /* fonts */
 
@@ -12,6 +12,7 @@
 /*---------------------------------------------------------------*/
 /* phone */
 
+
 body {
     background-color: #ffffff;
     padding: 0;
@@ -22,7 +23,7 @@ body {
 
 header{
     width: 100%;
-    background-color: #fbdadd;
+    background-color: #fbdadd; 
     text-align: center;
     margin: 0;
     padding: 0;
@@ -37,10 +38,12 @@ header{
     padding-top: 1em
 }
 
-div {
+header div {
     position: fixed;
-    z-index: 100;
+    z-index: 111;
     width: 100%;
+    padding: 2em;
+    top: 0;
     background-color: #fbdadd
 }
 
@@ -48,9 +51,9 @@ div {
     width: 30px;
     position: fixed;
     left    : 1px;
-    top     : 2px;
+    top     : 0px;
     height  : auto;
-    padding : 30px;
+    padding : 10px;
 }
     
 nav {
@@ -62,17 +65,18 @@ nav {
 ul {
     position       : fixed;
     display        : none;
-    left           : -15px;
+    left           : -30px;
     text-decoration: none;
     list-style     : none;
-    top            : 60px;
-    width          : 66px;
+    top            : 33px;
+    width          : 100%;
     font-size      : 20px;
-    background-color: #ffffff;
+    text-align: left
 }
 
 #wegweiser:hover+ul{
     display: block;
+    transition: all ease 2.5s;
 }
 
 
@@ -80,16 +84,19 @@ ul:hover {
     display: block
 }
 
+
 li {
     padding         : 5px;
-    padding-left    : 6px;
-    display         : block;
+    margin          : 1px;
+    display         : inline-block;
+    width: 100%;
     background-color: #ffffff;
 }
 
+
 li:hover {
     background-color: #fbdadd;
-    display: block;
+    display: inline-block;
 
 }
 
@@ -142,18 +149,18 @@ h2 {
 /* FOOTER */
 
 footer {
+    display: block;
+
     width: 100%;
     clear: both;
-    position: relative;
-    height: 40px;
-    margin-top: -40px;
+    height: 70px;
 }
 
 
 /*---------------------------------------------------------------*/
 /* Tablet */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width : 768px)  {
 
      
     aside {
@@ -236,5 +243,27 @@ footer {
     section:nth-child(3n+1){
         clear:left;
     
+    }
+
+    ul {
+        position       : fixed;
+        display        : none;
+        left           : -30px;
+        text-decoration: none;
+        list-style     : none;
+        top            : 33px;
+        width          : 100px;
+        font-size      : 20px;
+        text-align: left
+    }
+    
+    #wegweiser:hover+ul{
+        display: block;
+        transition: all ease 2.5s;
+    }
+    
+    
+    ul:hover {
+        display: block
     }
 }
