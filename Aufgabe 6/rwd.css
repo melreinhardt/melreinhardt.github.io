@@ -38,6 +38,7 @@ header{
     padding-top: 1em
 }
 
+
 header div {
     position: fixed;
     z-index: 111;
@@ -65,7 +66,7 @@ nav {
 ul {
     position       : fixed;
     display        : none;
-    left           : -30px;
+    left           : -37px;
     text-decoration: none;
     list-style-type: none;
     top            : 33px;
