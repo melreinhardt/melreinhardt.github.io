@@ -206,7 +206,7 @@ footer {
 /*---------------------------------------------------------------*/
 /* Tablet */
 
-@media screen and (min-width : 63em)  {
+@media screen and (min-width : 1008px)  {
 
      
     aside {
@@ -284,7 +284,7 @@ footer {
 /*---------------------------------------------------------------*/
 /* Desktop */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
 
     section:nth-child(3n+1){
         clear:left;
