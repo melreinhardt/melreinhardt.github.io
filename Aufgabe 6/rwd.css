@@ -83,13 +83,11 @@ div:hover {
 
 #wegweiser:hover+ul{
     display: block;
-    transition: all 0.8
 }
 
 
 ul:hover {
     display: block;
-    transition: all 0.8s
 }
 
 
