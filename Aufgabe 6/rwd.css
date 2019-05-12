@@ -75,19 +75,20 @@ ul {
     
 }
 
-#wegweiser:hover {
-    transform: rotate(360deg) 
+div:hover {
+    padding: 7em;
+    transition: all 0.8s
 }
 
 #wegweiser:hover+ul{
     display: block;
-
+    transition: all 0.8
 }
 
 
 ul:hover {
     display: block;
-    
+    transition: all 0.8s
 }
 
 
