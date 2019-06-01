@@ -185,7 +185,7 @@ function generateMonsterHitPoints() : number
 function generateMonsterXP() : number
 {
     // Diese Funktion gibt eine zufällige ganze Zahl (zwischen 0 und 350) + 100 zurück.
-    let tempMonsterXP : number = 100 + getRNGNumber(350);
+    let tempMonsterXP : number = 700 + getRNGNumber(500);
     return tempMonsterXP;
 }
 
@@ -222,10 +222,10 @@ function generateMonsterPic() : string {
 }
 
 function generateMonsterPoB(): string {
-    let ageAbrufen : string;
-    ageAbrufen = monsterPoB[getRNGNumber(monsterPoB.length)];
+    let PoBAbrufen : string;
+    PoBAbrufen = monsterPoB[getRNGNumber(monsterPoB.length)];
 
-    return ageAbrufen
+    return PoBAbrufen
 }
 
 // Aufgerufen, um das HTML-Element, welches das Spieler-Level darstellt, zu erneuern.
