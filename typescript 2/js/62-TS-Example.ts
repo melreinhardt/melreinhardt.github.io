@@ -216,11 +216,10 @@ function fightMonster(_index : number)
 }
 
 function generateMonsterPic() : string {
-    let bildErscheinen : string;
-    bildErscheinen = monsterPic[getRNGNumber(monsterPic.length)];
-
-    return bildErscheinen;
+    let rngNumber : number = getRNGNumber(monsterPic.length);                 // Diese Funktion gibt einen zufälligen Bild-Pfad zurück.
+    return monsterPic[rngNumber];   
 }
+
 
 function generateMonsterPoB(): string {
     let PoBAbrufen : string;
