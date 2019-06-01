@@ -23,9 +23,10 @@ interface Monster {
     monsterHealthPoints : number; // Lebenspunkte
     monsterExperience : number; // Erfahrungspunkte bei besiegen des Monsters
     monsterModifier : string []; // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
-
-    monsterPic: string;
+    
     monsterPoB: string;
+    monsterPic: string;
+    
 }
 
 
@@ -58,7 +59,7 @@ console.log(monsterArray ); // Gebe das Monster-Array einmal zu beginn aus. Es s
 window.onload = function () {
     document.getElementById("monsterSpawner").addEventListener("click", generateMonster, false);
     updatePlayerLevel(); // Zu Anfang wird durch eine Funktion ein HTML-Element mit Inhalt befüllt.
-console.log(document.getElementById("monsterSpawner").innerHTML);
+    console.log(document.getElementById("monsterSpawner").innerHTML);
 }
 
 
