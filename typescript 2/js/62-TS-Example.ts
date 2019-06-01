@@ -41,12 +41,13 @@ let playerXPperLevel : number = 500;                                            
 
 // Mehrere Arrays, welche jeweils Bauteile für Namen oder Eigenschaften der Monster beinhalten.
 let prefix : string[] = ["NASA-", "Pest-", "Dämliche(s) ", "Langsame(s) ", "Schwitzende(s) ", "Kniescheibenzertrümmernde(s) "]; // length = 6, da 6 Einträge. Von 0-5.
-let monsterName : string[] = ["Ratte", "Nagetier", "Ungeziefer"]; // length = 3, da 3 Einträge. Von 0-2.
-let suffix : string[] = [" des Verderbens", " aus der Hölle", " der Lethalität", " mit Rheuma", " der Redundanz", " der Zerberstung"]; // length = 6, da hier 6 Einträge sind. Von 0-5.
+let monsterName : string[] = ["Pferd", "Specht", "Katze", "Hund", "Anglerfisch"]; // length = 3, da 3 Einträge. Von 0-2.
+let suffix : string[] = [" des Zauberwaldes", " aus der Ozonschicht", " der Kummerhölle", " mit AIDS", " mit Komplexen", " der Zerberstung"]; // length = 6, da hier 6 Einträge sind. Von 0-5.
 
 let monsterModifers : string[] = ["Ist nervig", "Linkshänder", "Bier-Connoisseur", "Verfehlt häufig", "Prokrastiniert", "Müde", "Verwirrt", "Wasserscheu", "Bipolar", "Hat Schnupfen", "Verläuft sich oft"]; // Eine Reihe von zufälligen "Verstärkern" für das Monster.
 let monsterPic : string[] = ["ellie.jpg", "pferd.jpg", "hund.jpg", "m.jpg"];
 let monsterPoB : string[] = ["Nordpol", "Mond", "Mars", "china", "Kambodia", "unknown", "Russland"]
+
 // -- Initialisierung für viele/variable Anzahl an Monster --
 let monsterArray : Monster[] = []; // Das Haupt-Array wurde erstellt und initialisiert!
 console.log(monsterArray ); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
