@@ -25,6 +25,7 @@ interface Monster {
     monsterModifier : string []; // Monster-Verstärker. Diese sind in diesem Fall nur Text! (Da hier einfacher Zufall für die Auswahl genutzt wird, kann der gleiche Eintrag auch doppelt vorkommen)
 
     monsterPic: string;
+    monsterPoB: string;
 }
 
 
@@ -44,7 +45,7 @@ let suffix : string[] = [" des Verderbens", " aus der Hölle", " der Lethalität
 
 let monsterModifers : string[] = ["Ist nervig", "Linkshänder", "Bier-Connoisseur", "Verfehlt häufig", "Prokrastiniert", "Müde", "Verwirrt", "Wasserscheu", "Bipolar", "Hat Schnupfen", "Verläuft sich oft"]; // Eine Reihe von zufälligen "Verstärkern" für das Monster.
 let monsterPic : string[] = ["ellie.jpg", "pferd.jpg", "hund.jpg", "m.jpg"];
-
+let monsterPoB : string[] = ["Nordpol", "Mond", "Mars", "china", "Kambodia", "unknown", "Russland"]
 // -- Initialisierung für viele/variable Anzahl an Monster --
 let monsterArray : Monster[] = []; // Das Haupt-Array wurde erstellt und initialisiert!
 console.log(monsterArray ); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
@@ -72,6 +73,7 @@ function generateMonster()
     let newMonsterModifier : string[] = generateMonsterModifer();       // Eigens-gebaute Funktion, welche ein string-Array zurück gibt.
 
     let newMonsterPic : string = generateMonsterPic();
+    let newMonsterPoB : string = generateMonsterPoB();
 
     let newMonster : Monster = {                                        // Monster wird erstellt.
         monsterName : newMonsterName, 
@@ -79,6 +81,7 @@ function generateMonster()
         monsterExperience : newMonsterXP,
         monsterModifier : newMonsterModifier,
         monsterPic : newMonsterPic,
+        monsterPoB : newMonsterPoB,
         //monsterMoney : 0,
     };
 
@@ -104,6 +107,10 @@ function monsterGenerateHTML()
     let monsterMod : HTMLElement = document.createElement("p");        // Generiere einen <p>
     monsterMod.innerHTML = monsterArray[monsterArray.length - 1].monsterModifier[0] + ", " +  monsterArray[monsterArray.length -1].monsterModifier[1]; // Inhalt des <p>: Monster-Modifizierer null und eins
     holdingDiv.appendChild(monsterMod);                                // Füge das <p> zum HTML-Dokument hinzu, indem es dem holding-Div angefügt wird.
+
+    let monsterPoB : HTMLElement = document.createElement("p");
+    monsterPoB.innerHTML = monsterArray[monsterArray.length -1].monsterPoB;
+    holdingDiv.appendChild(monsterPoB);
 
     let monsterImg : HTMLElement = document.createElement("img");       // Erstelle ein <img>-Element
     monsterImg.setAttribute("scr", monsterArray[monsterArray.length -1 ].monsterPic);                 // Der Pfad für das Bild muss über setAttribute festgelegt werden. Der Bildpfad kann natürlich auch anders aussehen.
@@ -211,6 +218,13 @@ function generateMonsterPic() : string {
     bildErscheinen = monsterPic[getRNGNumber(monsterPic.length)];
 
     return bildErscheinen;
+}
+
+function generateMonsterPoB(): string {
+    let ageAbrufen : string;
+    ageAbrufen = monsterPoB[getRNGNumber(monsterPoB.length)];
+
+    return ageAbrufen
 }
 
 // Aufgerufen, um das HTML-Element, welches das Spieler-Level darstellt, zu erneuern.
