@@ -232,7 +232,7 @@ function updatePlayerLevel()
 }
 
 function neuerPoB() {
-    console.log("neue Lebensräme werden zum array hinzugefügt");
+    console.log("neue Places of Birth werden zum array hinzugefügt");
     monsterPofB.push("Mariannengraben");
     monsterPofB.push("hinter den Bergen bei den 7 Zwergen");
     monsterPofB.push("Chile");
