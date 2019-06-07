@@ -18,9 +18,12 @@ h1 {
 }
 
 .monster {
-	width: 20em;
+	width: 21em;
 }
 
+.moImg {
+	width: 40em
+}
 .monster img {
 	width: 100%;
 }
@@ -93,4 +96,9 @@ footer {
 footer a {
 	color: #ddd;
 	text-decoration: none;
+}
+
+img {
+	height: 25em;
+	width: 15em
 }
