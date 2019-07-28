@@ -237,4 +237,72 @@ function fightWeakestMonster() {
     }
     fightMonster(tempWeakest);
 }
+var i = 2;
+var o = 8;
+var j = 0;
+let elems = ["dog", "weasel", "lazy", "black", "the", "star", "over", "jumps", "left", "fox", "sparkling", "brown", "false", "quick", "donut", "the", "coffee", ",", "bogort", "humhrey", "I"];
+for (let I = elems.length - 1; i < o; i += 2) {
+    j += 1;
+    console.log("Ausgabe" + j + "i" + elems[i]);
+}
+let IGebäude = {
+    Bezeichnung: "IBau",
+    Reihen: 6,
+    StellplatzProReihe: 10,
+};
+let GGebäude = {
+    Bezeichnung: "GBau",
+    Reihen: 5,
+    StellplatzProReihe: 10,
+};
+let AGebäude = {
+    Bezeichnung: "ABau",
+    Reihen: 8,
+    StellplatzProReihe: 10,
+};
+let Gebäude = [IGebäude, GGebäude, AGebäude];
+function calculatePlätze(Gebäude) {
+    let summe = Gebäude.Reihen * Gebäude.StellplatzProReihe;
+    return summe;
+}
+console.log("der IBau hat " + calculatePlätze(IGebäude) + " Parkplätze");
+console.log("Der GBau hat " + calculatePlätze(GGebäude) + " Parkplätze");
+console.log("Der ABau hat " + calculatePlätze(AGebäude) + " Parkplätze");
+function PlätzaJahreszeit(Gebäude, Jahreszeit) {
+    let tempParkplätzeproReihe = Gebäude.StellplatzProReihe;
+    switch (Jahreszeit) {
+        case "Winter":
+            tempParkplätzeproReihe -= 2;
+            break;
+        case "Frühling":
+        case "Herbst":
+            tempParkplätzeproReihe -= 1;
+            break;
+    }
+    return tempParkplätzeproReihe * Gebäude.Reihen;
+}
+console.log("IBau hat im Winter " + PlätzaJahreszeit(AGebäude, "Winter") + " Parkplätze");
+var Beispielcode_73_1;
+(function (Beispielcode_73_1) {
+    // Funktion zum Swappen
+    function swapValues(a, b) {
+        // Ausgabe vor dem Swap    
+        console.log("Vorher: ", a, b);
+        var temp = a;
+        a = b;
+        b = temp;
+        /*
+        value1 = a;
+        value2 = b;
+        */
+        // Ausgabe nach dem Swap    
+        console.log("Nachher: ", a, b);
+    }
+    // Initialisierung     
+    var value1 = 37;
+    var value2 = 101;
+    // Funktionsaufruf
+    swapValues(value1, value2);
+    // console.log("Nachher: ", value1, value2);
+})(Beispielcode_73_1 || (Beispielcode_73_1 = {}));
 //# sourceMappingURL=62-TS-Example.js.map

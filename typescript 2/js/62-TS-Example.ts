@@ -334,3 +334,103 @@ function fightWeakestMonster() {
 }
 
 
+
+
+
+        var i : number =2;
+        var o : number =8;
+        var j : number = 0;
+        let elems:string [] = ["dog", "weasel", "lazy", "black", "the", "star", "over", "jumps", "left", "fox", "sparkling", "brown", "false", "quick", "donut", "the", "coffee", ",", "bogort", "humhrey", "I"]
+        for (let I : number = elems.length -1; i<o; i+=2){
+            j+=1;
+            console.log("Ausgabe" + j + "i" + elems[i]);
+            }
+
+
+            interface Parkplatz {
+                Bezeichnung : string;
+                Reihen: number;
+                StellplatzProReihe: number;
+                }
+
+             let IGebäude : Parkplatz = {
+                 Bezeichnung: "IBau",
+                 Reihen: 6,
+                 StellplatzProReihe: 10,
+             }
+            
+            let GGebäude : Parkplatz = {
+                 Bezeichnung: "GBau",
+                 Reihen: 5,
+                 StellplatzProReihe: 10,
+            }
+
+            let AGebäude : Parkplatz = {
+                 Bezeichnung: "ABau",
+                 Reihen: 8,
+                 StellplatzProReihe: 10,
+            }
+           
+            let Gebäude : Parkplatz [] = [IGebäude, GGebäude, AGebäude]
+
+            function calculatePlätze (Gebäude : Parkplatz) : number {
+                let summe = Gebäude.Reihen* Gebäude.StellplatzProReihe;
+                return summe
+            }
+
+            console.log ("der IBau hat " + calculatePlätze(IGebäude) + " Parkplätze")
+            console.log ("Der GBau hat " + calculatePlätze(GGebäude) + " Parkplätze")
+            console.log ("Der ABau hat " + calculatePlätze(AGebäude) + " Parkplätze")
+
+            function PlätzaJahreszeit (Gebäude :Parkplatz, Jahreszeit : string) : number {
+                let tempParkplätzeproReihe : number = Gebäude.StellplatzProReihe
+                switch(Jahreszeit) {
+                   case "Winter" : tempParkplätzeproReihe -= 2;
+                   break;
+                   case "Frühling" :
+                   case "Herbst" : tempParkplätzeproReihe -=1;
+                   break;
+            } 
+            return tempParkplätzeproReihe*Gebäude.Reihen
+                }
+            
+                console.log ("IBau hat im Winter " + PlätzaJahreszeit(AGebäude, "Winter") + " Parkplätze")
+                
+
+                namespace Beispielcode_73_1 { 
+    
+                    // Funktion zum Swappen
+                    
+                    function swapValues (a : number, b: number ) : void {
+                
+                        // Ausgabe vor dem Swap    
+                        console.log ("Vorher: ",a,b);
+                        
+                        var temp : number = a;
+                        a = b;
+                        b = temp;    
+                        
+                        /*
+                        value1 = a;
+                        value2 = b;
+                        */
+                        
+                        // Ausgabe nach dem Swap    
+                        console.log("Nachher: ", a, b);
+                        
+                    }
+                   
+                    // Initialisierung     
+                    var value1 : number = 37;
+                    var value2 : number = 101;
+                    
+                    // Funktionsaufruf
+                    swapValues (value1, value2);
+                    
+                   // console.log("Nachher: ", value1, value2);
+                    
+                    
+                    
+                    
+                }
+

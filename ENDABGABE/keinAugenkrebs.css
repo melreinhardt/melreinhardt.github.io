@@ -1,0 +1,126 @@
+/* keinAugenkrebs.css */
+header {
+    background-color: rgb(197, 192, 192);
+    padding: 2rem;
+    margin: 1rem;
+    font-size: 20px
+}
+
+section {
+    border-color: brown;
+    border-width: 3px;
+    margin: 1em;
+    padding: 20px;
+    height: 20em; 
+    border-style: solid;
+    background-color: #e6e6e6
+    
+}
+
+section:nth-of-type(4){
+    clear:both;
+}
+
+.stapel {
+    float: left;
+    width: 47%;
+    padding: 40px;
+    height: 25em;
+    box-sizing: border-box;
+
+}
+
+
+section div {
+    height: 17em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.75px;
+    border-radius: 1em;
+    width: 10em;
+    margin-left: 1em;
+    float: left;
+} 
+
+
+#meineKartenHolding div  {
+    height: 17em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.75px;
+    border-radius: 1em;
+    width: 10em;
+    margin-left: 1em;
+}
+
+#ablagestapel div {
+    height: 17em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.75px;
+    border-radius: 1em;
+    width: 10em;
+    margin-left: 1em;
+}
+
+#meineKartenHolding p  {
+    margin-bottom: 2em;
+    margin-left: 1.5em
+}
+
+#ablagestapel p {
+    margin-bottom: 2em;
+    margin-left: 1.5em
+}
+
+#meineKartenHolding p:last-of-type  {
+    transform: rotate(180deg);
+    margin-bottom: 0;
+    margin-right: 1.5em
+    
+}
+
+#ablagestapel p:last-of-type {
+    transform: rotate(180deg);
+    margin-bottom: 0;
+    margin-right: 1.5em
+}
+
+.kartenrücken {
+    /*background-color: black; */
+    background-image: url("muster.jpg");
+    height: 17em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.75px;
+    border-radius: 1em;
+    width: 10em;
+}
+
+.rot {
+    background-color: #F63939
+}
+
+.blau {
+    background-color: #5D84E1
+}
+
+.grün {
+    background-color: #9AF0B3
+}
+
+.gelb {
+    background-color: #EDEF89
+}
+
+
+main {
+    background-image: url("1.jpg");
+    padding: 2em;
+    margin: 0
+}
+
+p {
+    font-size: 45px;
+    font-family: fantasy
+}
